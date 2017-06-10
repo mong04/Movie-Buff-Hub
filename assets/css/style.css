@@ -1,0 +1,90 @@
+body {
+	/*padding-top: 60px;*/
+	color: white;
+	background: black;
+}
+
+h3 {
+	text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+#TMDb-logo {
+	height: 30px !important;
+	width: auto;
+}
+
+#tmdb-credit {
+	color: #081c24;
+}
+.collapsible {
+	clear: both;
+	border: 0px;
+}
+
+.responsive-img {
+	margin-bottom: 1px;
+}
+
+.btn {
+	background: #bf360c;
+}
+
+.movie-suggestion, .person-suggestion {
+	padding: 10px 20px;
+	float: left;
+	width: 200px;
+	height: 200px;
+}
+
+/*.poster, .profile {
+	width: 20%;
+	padding: 10px;
+}*/
+
+.input-field {
+	margin-bottom: 30px;
+}
+#my-modal-actor, #my-modal-movie {
+	color: black;
+}
+#search-history {
+	padding: 10px 20px;
+}
+
+/*.main-movie-content {
+	color: black;
+	text-align: center;
+}*/
+
+.link:hover {
+	cursor: pointer;
+}
+
+ul.dropdown-content {
+	margin-top: 10px;
+	overflow-y: auto;
+}
+
+@media screen and (max-width: 600px){
+	.responsive-img{width: 100%;}
+	body{width: 100%;}
+}
+
+/* Custom position for toast message */
+#toast-container {
+  top: auto !important;
+  left: auto !important;
+  bottom: 80%;
+  right:0%;
+}
+
+body {
+display: flex;
+min-height: 100vh;
+flex-direction: column;
+}
+
+main {
+flex: 1 0 auto;
+}
+    
