@@ -19,7 +19,7 @@ function getUserKey() {
 	else {k = localStorage.getItem('User Key');}
 
 	// always returns the key at the end of the function
-	console.log('User Key:', k);
+	// console.log('User Key:', k);
 	return k;
 }
 
