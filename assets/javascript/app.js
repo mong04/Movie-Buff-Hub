@@ -62,7 +62,7 @@ $(document).ready(function(){
 
 	// event listener for clicking on <a class="link">
 	$(document).on('click', '.link', function(event){
-		console.log($(this).attr('data-name'));
+		// console.log($(this).attr('data-name'));
 		// prevents page from trying to seek the href link #
 		event.preventDefault();		
 		// gets the query and queryType from data
@@ -99,7 +99,9 @@ $(document).ready(function(){
 		// if user presses ~, clears all data in database
 		if (event.which === 126) {database.ref().set({});}
 		// if user presses ?, displays user key in console
-		if (event.which === 63) {console.log(localStorage.getItem('User Key'));}
+		if (event.which === 63) {
+			// console.log(localStorage.getItem('User Key'));
+		}
 	});
 
 }); // end of document ready

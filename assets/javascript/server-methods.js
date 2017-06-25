@@ -43,7 +43,7 @@ function afterLoadRedirectTo(searchObject, destination) {
 	if (currentPage !== destination) {
 		// add event handler for listening to changes in lastsearch
 		database.ref('usersearches/' + getUserKey() + '/lastsearch').on('value', function(snapshot){
-			console.log('snapshot', snapshot.val());
+			// console.log('snapshot', snapshot.val());
 			// if the value equals the search object, redirect to destination
 			if (snapshot.val().results.name === searchObject.results.name) {
 				destination = './' + destination;

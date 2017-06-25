@@ -15,7 +15,7 @@ function searchTMDBbyPerson(searchObject, searchKey) {
 		url: queryURL
 	}).done(function(r){
 		if (r.total_results >= 1) {
-			console.log(r.results[0]);
+			// console.log(r.results[0]);
 			// saves results in searchObject.results
 			searchObject.results = r.results[0];
 			// adds head to profile_path
@@ -49,7 +49,7 @@ function actorInfo(searchObject, searchKey) {
 	};
 
 	$.ajax(settings).done(function (response) {
-	  console.log(response);
+	//   console.log(response);
 	  	searchObject.results.details = response;
 
 		// writes search results to firebase
@@ -109,7 +109,7 @@ function searchOMDBbyMovie(searchObject, searchKey) {
 		method: "GET",
 		url: queryURL
 	}).done(function(r){
-		console.log(r);
+		// console.log(r);
 		if (r.Response !== "False") {
 			// saves results in searchObject.results
 			searchObject.results = r;
